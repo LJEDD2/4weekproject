@@ -1,0 +1,5479 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/westeros.js"></script>
+
+    
+</head>
+<body>
+        <style>
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 12px 16px;
+            transition: 0.3s;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        .chart-container {
+            display: none;
+            padding: 6px 12px;
+            border-top: none;
+        }
+    </style>
+    <div class="tab">
+            <button class="tablinks" onclick="showChart(event, '7568f3ea99f74028a22a6b4e89c0e3b4')">연간 지역별 전입사유 변화</button>
+            <button class="tablinks" onclick="showChart(event, '35e9d30fc12e409c8a555c775d866910')">연간 지역별 전출사유 변화</button>
+    </div>
+
+    <div class="box">
+                <div id="7568f3ea99f74028a22a6b4e89c0e3b4" class="chart-container" style="width:800px; height:600px;"></div>
+    <script>
+        var chart_7568f3ea99f74028a22a6b4e89c0e3b4 = echarts.init(
+            document.getElementById('7568f3ea99f74028a22a6b4e89c0e3b4'), 'westeros', {renderer: 'canvas'});
+        var option_7568f3ea99f74028a22a6b4e89c0e3b4 = {
+    "baseOption": {
+        "series": [
+            {
+                "type": "bar",
+                "name": "\uc9c1\uc5c5",
+                "legendHoverLink": true,
+                "data": [
+                    41.3,
+                    29.1,
+                    34.6,
+                    35.1,
+                    31.8,
+                    34.2,
+                    39.7,
+                    36.0,
+                    35.8,
+                    31.7,
+                    40.1,
+                    31.0,
+                    35.8,
+                    33.8,
+                    42.8,
+                    43.5,
+                    42.2
+                ],
+                "showBackground": false,
+                "stack": "stack1",
+                "barMinHeight": 0,
+                "barCategoryGap": "20%",
+                "barGap": "30%",
+                "large": false,
+                "largeThreshold": 400,
+                "seriesLayoutBy": "column",
+                "datasetIndex": 0,
+                "clip": true,
+                "zlevel": 0,
+                "z": 2,
+                "label": {
+                    "show": true,
+                    "position": "inside",
+                    "margin": 8
+                },
+                "rippleEffect": {
+                    "show": true,
+                    "brushType": "stroke",
+                    "scale": 2.5,
+                    "period": 4
+                }
+            },
+            {
+                "type": "bar",
+                "name": "\uac00\uc871",
+                "legendHoverLink": true,
+                "data": [
+                    24.6,
+                    25.9,
+                    30.2,
+                    27.0,
+                    32.2,
+                    32.1,
+                    25.8,
+                    27.3,
+                    23.3,
+                    25.1,
+                    33.4,
+                    26.1,
+                    29.6,
+                    29.8,
+                    24.2,
+                    25.4,
+                    24.8
+                ],
+                "showBackground": false,
+                "stack": "stack1",
+                "barMinHeight": 0,
+                "barCategoryGap": "20%",
+                "barGap": "30%",
+                "large": false,
+                "largeThreshold": 400,
+                "seriesLayoutBy": "column",
+                "datasetIndex": 0,
+                "clip": true,
+                "zlevel": 0,
+                "z": 2,
+                "label": {
+                    "show": true,
+                    "position": "inside",
+                    "margin": 8
+                },
+                "rippleEffect": {
+                    "show": true,
+                    "brushType": "stroke",
+                    "scale": 2.5,
+                    "period": 4
+                }
+            },
+            {
+                "type": "bar",
+                "name": "\uc8fc\ud0dd",
+                "legendHoverLink": true,
+                "data": [
+                    16.1,
+                    30.0,
+                    19.1,
+                    16.9,
+                    16.5,
+                    15.2,
+                    15.4,
+                    17.0,
+                    20.3,
+                    29.3,
+                    12.2,
+                    27.2,
+                    16.8,
+                    14.2,
+                    11.7,
+                    15.7,
+                    15.5
+                ],
+                "showBackground": false,
+                "stack": "stack1",
+                "barMinHeight": 0,
+                "barCategoryGap": "20%",
+                "barGap": "30%",
+                "large": false,
+                "largeThreshold": 400,
+                "seriesLayoutBy": "column",
+                "datasetIndex": 0,
+                "clip": true,
+                "zlevel": 0,
+                "z": 2,
+                "label": {
+                    "show": true,
+                    "position": "inside",
+                    "margin": 8
+                },
+                "rippleEffect": {
+                    "show": true,
+                    "brushType": "stroke",
+                    "scale": 2.5,
+                    "period": 4
+                }
+            },
+            {
+                "type": "bar",
+                "name": "\uad50\uc721",
+                "legendHoverLink": true,
+                "data": [
+                    6.2,
+                    4.4,
+                    4.8,
+                    6.0,
+                    7.7,
+                    7.6,
+                    10.2,
+                    9.6,
+                    9.9,
+                    4.4,
+                    3.9,
+                    4.6,
+                    4.0,
+                    7.3,
+                    6.6,
+                    5.0,
+                    5.7
+                ],
+                "showBackground": false,
+                "stack": "stack1",
+                "barMinHeight": 0,
+                "barCategoryGap": "20%",
+                "barGap": "30%",
+                "large": false,
+                "largeThreshold": 400,
+                "seriesLayoutBy": "column",
+                "datasetIndex": 0,
+                "clip": true,
+                "zlevel": 0,
+                "z": 2,
+                "label": {
+                    "show": true,
+                    "position": "inside",
+                    "margin": 8
+                },
+                "rippleEffect": {
+                    "show": true,
+                    "brushType": "stroke",
+                    "scale": 2.5,
+                    "period": 4
+                }
+            },
+            {
+                "type": "bar",
+                "name": "\uc8fc\uac70\ud658\uacbd",
+                "legendHoverLink": true,
+                "data": [
+                    3.3,
+                    3.4,
+                    2.4,
+                    2.8,
+                    3.3,
+                    3.4,
+                    3.2,
+                    3.4,
+                    3.9,
+                    3.5,
+                    1.7,
+                    3.3,
+                    2.3,
+                    2.3,
+                    2.5,
+                    2.3,
+                    2.1
+                ],
+                "showBackground": false,
+                "stack": "stack1",
+                "barMinHeight": 0,
+                "barCategoryGap": "20%",
+                "barGap": "30%",
+                "large": false,
+                "largeThreshold": 400,
+                "seriesLayoutBy": "column",
+                "datasetIndex": 0,
+                "clip": true,
+                "zlevel": 0,
+                "z": 2,
+                "label": {
+                    "show": true,
+                    "position": "inside",
+                    "margin": 8
+                },
+                "rippleEffect": {
+                    "show": true,
+                    "brushType": "stroke",
+                    "scale": 2.5,
+                    "period": 4
+                }
+            },
+            {
+                "type": "bar",
+                "name": "\uc790\uc5f0\ud658\uacbd",
+                "legendHoverLink": true,
+                "data": [
+                    5.3,
+                    1.3,
+                    3.0,
+                    3.8,
+                    0.6,
+                    0.6,
+                    0.6,
+                    0.8,
+                    0.3,
+                    1.0,
+                    1.1,
+                    1.0,
+                    4.4,
+                    3.3,
+                    7.5,
+                    2.9,
+                    3.1
+                ],
+                "showBackground": false,
+                "stack": "stack1",
+                "barMinHeight": 0,
+                "barCategoryGap": "20%",
+                "barGap": "30%",
+                "large": false,
+                "largeThreshold": 400,
+                "seriesLayoutBy": "column",
+                "datasetIndex": 0,
+                "clip": true,
+                "zlevel": 0,
+                "z": 2,
+                "label": {
+                    "show": true,
+                    "position": "inside",
+                    "margin": 8
+                },
+                "rippleEffect": {
+                    "show": true,
+                    "brushType": "stroke",
+                    "scale": 2.5,
+                    "period": 4
+                }
+            },
+            {
+                "type": "bar",
+                "name": "\uae30\ud0c0",
+                "legendHoverLink": true,
+                "data": [
+                    3.2,
+                    5.8,
+                    5.9,
+                    8.5,
+                    7.9,
+                    6.8,
+                    5.2,
+                    5.9,
+                    6.6,
+                    5.0,
+                    7.6,
+                    6.8,
+                    7.1,
+                    9.2,
+                    4.8,
+                    5.2,
+                    6.6
+                ],
+                "showBackground": false,
+                "stack": "stack1",
+                "barMinHeight": 0,
+                "barCategoryGap": "20%",
+                "barGap": "30%",
+                "large": false,
+                "largeThreshold": 400,
+                "seriesLayoutBy": "column",
+                "datasetIndex": 0,
+                "clip": true,
+                "zlevel": 0,
+                "z": 2,
+                "label": {
+                    "show": true,
+                    "position": "inside",
+                    "margin": 8
+                },
+                "rippleEffect": {
+                    "show": true,
+                    "brushType": "stroke",
+                    "scale": 2.5,
+                    "period": 4
+                }
+            }
+        ],
+        "timeline": {
+            "axisType": "category",
+            "orient": "horizontal",
+            "autoPlay": true,
+            "controlPosition": "left",
+            "loop": true,
+            "rewind": false,
+            "show": true,
+            "inverse": false,
+            "bottom": "-5px",
+            "data": [
+                "2016\ub144\ub3c4",
+                "2017\ub144\ub3c4",
+                "2018\ub144\ub3c4",
+                "2019\ub144\ub3c4",
+                "2020\ub144\ub3c4"
+            ]
+        },
+        "xAxis": [
+            {
+                "show": true,
+                "scale": false,
+                "nameLocation": "end",
+                "nameGap": 15,
+                "gridIndex": 0,
+                "inverse": false,
+                "offset": 0,
+                "splitNumber": 5,
+                "minInterval": 0,
+                "splitLine": {
+                    "show": false,
+                    "lineStyle": {
+                        "show": true,
+                        "width": 1,
+                        "opacity": 1,
+                        "curveness": 0,
+                        "type": "solid"
+                    }
+                },
+                "data": [
+                    "\uac15\uc6d0",
+                    "\uacbd\uae30",
+                    "\uacbd\ub0a8",
+                    "\uacbd\ubd81",
+                    "\uad11\uc8fc",
+                    "\ub300\uad6c",
+                    "\ub300\uc804",
+                    "\ubd80\uc0b0",
+                    "\uc11c\uc6b8",
+                    "\uc138\uc885",
+                    "\uc6b8\uc0b0",
+                    "\uc778\ucc9c",
+                    "\uc804\ub0a8",
+                    "\uc804\ubd81",
+                    "\uc81c\uc8fc",
+                    "\ucda9\ub0a8",
+                    "\ucda9\ubd81"
+                ]
+            }
+        ],
+        "yAxis": [
+            {
+                "show": true,
+                "scale": false,
+                "nameLocation": "end",
+                "nameGap": 15,
+                "gridIndex": 0,
+                "inverse": false,
+                "offset": 0,
+                "splitNumber": 5,
+                "minInterval": 0,
+                "splitLine": {
+                    "show": false,
+                    "lineStyle": {
+                        "show": true,
+                        "width": 1,
+                        "opacity": 1,
+                        "curveness": 0,
+                        "type": "solid"
+                    }
+                }
+            }
+        ]
+    },
+    "options": [
+        {
+            "legend": [
+                {
+                    "data": [
+                        "\uc9c1\uc5c5",
+                        "\uac00\uc871",
+                        "\uc8fc\ud0dd",
+                        "\uad50\uc721",
+                        "\uc8fc\uac70\ud658\uacbd",
+                        "\uc790\uc5f0\ud658\uacbd",
+                        "\uae30\ud0c0"
+                    ],
+                    "selected": {
+                        "\uc9c1\uc5c5": true,
+                        "\uac00\uc871": true,
+                        "\uc8fc\ud0dd": true,
+                        "\uad50\uc721": true,
+                        "\uc8fc\uac70\ud658\uacbd": true,
+                        "\uc790\uc5f0\ud658\uacbd": true,
+                        "\uae30\ud0c0": true
+                    },
+                    "type": "scroll",
+                    "show": true,
+                    "left": "65%",
+                    "bottom": "79%",
+                    "orient": "verticle",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "icon": "pin"
+                }
+            ],
+            "series": [
+                {
+                    "type": "bar",
+                    "name": "\uc9c1\uc5c5",
+                    "legendHoverLink": true,
+                    "data": [
+                        41.8,
+                        27.8,
+                        35.1,
+                        38.0,
+                        28.6,
+                        30.8,
+                        38.9,
+                        34.3,
+                        33.9,
+                        36.7,
+                        41.7,
+                        28.6,
+                        33.0,
+                        31.0,
+                        45.6,
+                        42.4,
+                        38.8
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uac00\uc871",
+                    "legendHoverLink": true,
+                    "data": [
+                        26.8,
+                        26.0,
+                        31.2,
+                        30.1,
+                        36.9,
+                        34.3,
+                        27.8,
+                        30.9,
+                        25.7,
+                        22.7,
+                        34.9,
+                        27.8,
+                        33.8,
+                        35.1,
+                        24.5,
+                        27.4,
+                        27.5
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uc8fc\ud0dd",
+                    "legendHoverLink": true,
+                    "data": [
+                        13.9,
+                        34.7,
+                        22.2,
+                        16.3,
+                        18.6,
+                        23.0,
+                        19.1,
+                        21.4,
+                        24.5,
+                        28.6,
+                        15.0,
+                        32.4,
+                        17.1,
+                        16.4,
+                        14.5,
+                        17.6,
+                        15.7
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uad50\uc721",
+                    "legendHoverLink": true,
+                    "data": [
+                        7.6,
+                        3.9,
+                        3.3,
+                        5.0,
+                        5.6,
+                        4.9,
+                        7.5,
+                        6.7,
+                        8.2,
+                        3.8,
+                        3.3,
+                        3.0,
+                        4.5,
+                        5.1,
+                        5.0,
+                        4.3,
+                        6.6
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uc8fc\uac70\ud658\uacbd",
+                    "legendHoverLink": true,
+                    "data": [
+                        1.9,
+                        1.5,
+                        1.4,
+                        1.5,
+                        1.6,
+                        1.6,
+                        1.5,
+                        1.4,
+                        2.1,
+                        1.6,
+                        0.9,
+                        1.6,
+                        1.5,
+                        1.7,
+                        1.8,
+                        1.4,
+                        1.3
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uc790\uc5f0\ud658\uacbd",
+                    "legendHoverLink": true,
+                    "data": [
+                        4.2,
+                        1.0,
+                        2.2,
+                        2.9,
+                        0.6,
+                        0.7,
+                        0.6,
+                        0.6,
+                        0.3,
+                        0.7,
+                        0.7,
+                        0.7,
+                        3.4,
+                        3.1,
+                        4.7,
+                        2.3,
+                        2.7
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uae30\ud0c0",
+                    "legendHoverLink": true,
+                    "data": [
+                        3.9,
+                        5.2,
+                        4.6,
+                        6.2,
+                        8.1,
+                        4.8,
+                        4.7,
+                        4.7,
+                        5.4,
+                        6.0,
+                        3.5,
+                        5.8,
+                        6.7,
+                        7.7,
+                        3.9,
+                        4.5,
+                        7.4
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\uac15\uc6d0",
+                        "\uacbd\uae30",
+                        "\uacbd\ub0a8",
+                        "\uacbd\ubd81",
+                        "\uad11\uc8fc",
+                        "\ub300\uad6c",
+                        "\ub300\uc804",
+                        "\ubd80\uc0b0",
+                        "\uc11c\uc6b8",
+                        "\uc138\uc885",
+                        "\uc6b8\uc0b0",
+                        "\uc778\ucc9c",
+                        "\uc804\ub0a8",
+                        "\uc804\ubd81",
+                        "\uc81c\uc8fc",
+                        "\ucda9\ub0a8",
+                        "\ucda9\ubd81"
+                    ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc5f0\ub3c4\uc5d0 \ub530\ub978 \uc9c0\uc5ed\ubcc4 \uc804\uc785 \uc0ac\uc720 (%) ",
+                    "subtext": "dacon \ubd80\ub3d9\uc0b0\ub300\ud68c \uc218\uc0c1\uc790\ud300 \ucf54\ub4dc \ucc38\uace0",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "axis",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "cross"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        "\uc9c1\uc5c5",
+                        "\uac00\uc871",
+                        "\uc8fc\ud0dd",
+                        "\uad50\uc721",
+                        "\uc8fc\uac70\ud658\uacbd",
+                        "\uc790\uc5f0\ud658\uacbd",
+                        "\uae30\ud0c0"
+                    ],
+                    "selected": {
+                        "\uc9c1\uc5c5": true,
+                        "\uac00\uc871": true,
+                        "\uc8fc\ud0dd": true,
+                        "\uad50\uc721": true,
+                        "\uc8fc\uac70\ud658\uacbd": true,
+                        "\uc790\uc5f0\ud658\uacbd": true,
+                        "\uae30\ud0c0": true
+                    },
+                    "type": "scroll",
+                    "show": true,
+                    "left": "65%",
+                    "bottom": "79%",
+                    "orient": "verticle",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "icon": "pin"
+                }
+            ],
+            "series": [
+                {
+                    "type": "bar",
+                    "name": "\uc9c1\uc5c5",
+                    "legendHoverLink": true,
+                    "data": [
+                        41.6,
+                        28.2,
+                        31.0,
+                        36.5,
+                        27.5,
+                        32.0,
+                        39.4,
+                        36.1,
+                        34.2,
+                        29.2,
+                        40.7,
+                        29.8,
+                        33.3,
+                        29.1,
+                        45.5,
+                        42.5,
+                        39.9
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uac00\uc871",
+                    "legendHoverLink": true,
+                    "data": [
+                        26.7,
+                        26.0,
+                        30.2,
+                        29.0,
+                        36.4,
+                        32.0,
+                        27.8,
+                        29.2,
+                        25.0,
+                        20.5,
+                        35.2,
+                        27.8,
+                        32.2,
+                        32.4,
+                        22.7,
+                        25.5,
+                        25.8
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uc8fc\ud0dd",
+                    "legendHoverLink": true,
+                    "data": [
+                        14.8,
+                        32.1,
+                        25.3,
+                        17.3,
+                        19.9,
+                        20.8,
+                        16.7,
+                        18.1,
+                        22.4,
+                        36.0,
+                        14.9,
+                        29.5,
+                        17.3,
+                        16.1,
+                        15.0,
+                        18.3,
+                        15.1
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uad50\uc721",
+                    "legendHoverLink": true,
+                    "data": [
+                        7.8,
+                        4.3,
+                        3.5,
+                        5.1,
+                        6.1,
+                        5.7,
+                        8.2,
+                        7.5,
+                        8.9,
+                        4.3,
+                        3.4,
+                        3.5,
+                        4.6,
+                        8.0,
+                        6.2,
+                        5.3,
+                        6.9
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uc8fc\uac70\ud658\uacbd",
+                    "legendHoverLink": true,
+                    "data": [
+                        2.2,
+                        2.2,
+                        1.9,
+                        2.5,
+                        2.2,
+                        2.1,
+                        2.0,
+                        2.0,
+                        2.9,
+                        2.7,
+                        1.5,
+                        2.1,
+                        2.0,
+                        2.2,
+                        1.6,
+                        1.8,
+                        1.7
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uc790\uc5f0\ud658\uacbd",
+                    "legendHoverLink": true,
+                    "data": [
+                        5.0,
+                        1.2,
+                        2.6,
+                        3.3,
+                        0.7,
+                        0.7,
+                        0.7,
+                        0.9,
+                        0.4,
+                        0.8,
+                        0.9,
+                        0.9,
+                        4.3,
+                        3.1,
+                        5.1,
+                        2.5,
+                        3.0
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uae30\ud0c0",
+                    "legendHoverLink": true,
+                    "data": [
+                        1.8,
+                        6.0,
+                        5.5,
+                        6.4,
+                        7.3,
+                        6.8,
+                        5.2,
+                        6.2,
+                        6.3,
+                        6.6,
+                        3.5,
+                        6.3,
+                        6.3,
+                        9.2,
+                        4.0,
+                        4.3,
+                        7.6
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\uac15\uc6d0",
+                        "\uacbd\uae30",
+                        "\uacbd\ub0a8",
+                        "\uacbd\ubd81",
+                        "\uad11\uc8fc",
+                        "\ub300\uad6c",
+                        "\ub300\uc804",
+                        "\ubd80\uc0b0",
+                        "\uc11c\uc6b8",
+                        "\uc138\uc885",
+                        "\uc6b8\uc0b0",
+                        "\uc778\ucc9c",
+                        "\uc804\ub0a8",
+                        "\uc804\ubd81",
+                        "\uc81c\uc8fc",
+                        "\ucda9\ub0a8",
+                        "\ucda9\ubd81"
+                    ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc5f0\ub3c4\uc5d0 \ub530\ub978 \uc9c0\uc5ed\ubcc4 \uc804\uc785 \uc0ac\uc720 (%) ",
+                    "subtext": "dacon \ubd80\ub3d9\uc0b0\ub300\ud68c \uc218\uc0c1\uc790\ud300 \ucf54\ub4dc \ucc38\uace0",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "axis",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "cross"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        "\uc9c1\uc5c5",
+                        "\uac00\uc871",
+                        "\uc8fc\ud0dd",
+                        "\uad50\uc721",
+                        "\uc8fc\uac70\ud658\uacbd",
+                        "\uc790\uc5f0\ud658\uacbd",
+                        "\uae30\ud0c0"
+                    ],
+                    "selected": {
+                        "\uc9c1\uc5c5": true,
+                        "\uac00\uc871": true,
+                        "\uc8fc\ud0dd": true,
+                        "\uad50\uc721": true,
+                        "\uc8fc\uac70\ud658\uacbd": true,
+                        "\uc790\uc5f0\ud658\uacbd": true,
+                        "\uae30\ud0c0": true
+                    },
+                    "type": "scroll",
+                    "show": true,
+                    "left": "65%",
+                    "bottom": "79%",
+                    "orient": "verticle",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "icon": "pin"
+                }
+            ],
+            "series": [
+                {
+                    "type": "bar",
+                    "name": "\uc9c1\uc5c5",
+                    "legendHoverLink": true,
+                    "data": [
+                        40.1,
+                        28.4,
+                        32.7,
+                        35.7,
+                        28.3,
+                        33.1,
+                        39.5,
+                        37.0,
+                        35.9,
+                        29.8,
+                        40.4,
+                        30.7,
+                        32.8,
+                        32.3,
+                        43.9,
+                        42.9,
+                        43.0
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uac00\uc871",
+                    "legendHoverLink": true,
+                    "data": [
+                        26.7,
+                        25.5,
+                        31.7,
+                        28.8,
+                        35.5,
+                        32.1,
+                        28.0,
+                        29.1,
+                        24.9,
+                        22.9,
+                        34.7,
+                        27.8,
+                        32.4,
+                        32.7,
+                        22.7,
+                        26.1,
+                        25.1
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uc8fc\ud0dd",
+                    "legendHoverLink": true,
+                    "data": [
+                        15.8,
+                        31.7,
+                        21.7,
+                        17.4,
+                        19.3,
+                        17.9,
+                        15.1,
+                        17.0,
+                        19.7,
+                        33.4,
+                        15.0,
+                        28.1,
+                        17.0,
+                        15.6,
+                        13.5,
+                        16.9,
+                        14.8
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uad50\uc721",
+                    "legendHoverLink": true,
+                    "data": [
+                        7.6,
+                        4.0,
+                        3.9,
+                        5.2,
+                        6.5,
+                        5.8,
+                        8.7,
+                        8.4,
+                        9.1,
+                        5.4,
+                        3.7,
+                        3.4,
+                        4.8,
+                        6.5,
+                        6.1,
+                        5.3,
+                        5.6
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uc8fc\uac70\ud658\uacbd",
+                    "legendHoverLink": true,
+                    "data": [
+                        2.4,
+                        2.7,
+                        2.1,
+                        2.5,
+                        2.6,
+                        2.6,
+                        2.2,
+                        2.2,
+                        3.2,
+                        3.1,
+                        1.3,
+                        2.5,
+                        2.1,
+                        2.2,
+                        1.6,
+                        1.8,
+                        1.9
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uc790\uc5f0\ud658\uacbd",
+                    "legendHoverLink": true,
+                    "data": [
+                        4.8,
+                        1.2,
+                        2.4,
+                        3.5,
+                        0.8,
+                        0.7,
+                        0.7,
+                        0.9,
+                        0.4,
+                        0.8,
+                        1.0,
+                        1.0,
+                        4.0,
+                        3.0,
+                        5.6,
+                        2.4,
+                        2.6
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uae30\ud0c0",
+                    "legendHoverLink": true,
+                    "data": [
+                        2.7,
+                        6.5,
+                        5.5,
+                        6.9,
+                        7.0,
+                        7.7,
+                        5.9,
+                        5.5,
+                        6.8,
+                        4.6,
+                        3.9,
+                        6.5,
+                        6.9,
+                        7.7,
+                        6.5,
+                        4.6,
+                        7.0
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\uac15\uc6d0",
+                        "\uacbd\uae30",
+                        "\uacbd\ub0a8",
+                        "\uacbd\ubd81",
+                        "\uad11\uc8fc",
+                        "\ub300\uad6c",
+                        "\ub300\uc804",
+                        "\ubd80\uc0b0",
+                        "\uc11c\uc6b8",
+                        "\uc138\uc885",
+                        "\uc6b8\uc0b0",
+                        "\uc778\ucc9c",
+                        "\uc804\ub0a8",
+                        "\uc804\ubd81",
+                        "\uc81c\uc8fc",
+                        "\ucda9\ub0a8",
+                        "\ucda9\ubd81"
+                    ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc5f0\ub3c4\uc5d0 \ub530\ub978 \uc9c0\uc5ed\ubcc4 \uc804\uc785 \uc0ac\uc720 (%) ",
+                    "subtext": "dacon \ubd80\ub3d9\uc0b0\ub300\ud68c \uc218\uc0c1\uc790\ud300 \ucf54\ub4dc \ucc38\uace0",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "axis",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "cross"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        "\uc9c1\uc5c5",
+                        "\uac00\uc871",
+                        "\uc8fc\ud0dd",
+                        "\uad50\uc721",
+                        "\uc8fc\uac70\ud658\uacbd",
+                        "\uc790\uc5f0\ud658\uacbd",
+                        "\uae30\ud0c0"
+                    ],
+                    "selected": {
+                        "\uc9c1\uc5c5": true,
+                        "\uac00\uc871": true,
+                        "\uc8fc\ud0dd": true,
+                        "\uad50\uc721": true,
+                        "\uc8fc\uac70\ud658\uacbd": true,
+                        "\uc790\uc5f0\ud658\uacbd": true,
+                        "\uae30\ud0c0": true
+                    },
+                    "type": "scroll",
+                    "show": true,
+                    "left": "65%",
+                    "bottom": "79%",
+                    "orient": "verticle",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "icon": "pin"
+                }
+            ],
+            "series": [
+                {
+                    "type": "bar",
+                    "name": "\uc9c1\uc5c5",
+                    "legendHoverLink": true,
+                    "data": [
+                        40.7,
+                        29.7,
+                        34.7,
+                        36.0,
+                        28.9,
+                        34.5,
+                        39.7,
+                        37.4,
+                        36.8,
+                        31.7,
+                        40.3,
+                        31.6,
+                        35.2,
+                        33.9,
+                        42.8,
+                        43.2,
+                        42.8
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uac00\uc871",
+                    "legendHoverLink": true,
+                    "data": [
+                        25.9,
+                        26.6,
+                        31.6,
+                        28.0,
+                        34.4,
+                        32.5,
+                        26.8,
+                        28.1,
+                        24.1,
+                        23.1,
+                        33.8,
+                        27.5,
+                        31.6,
+                        31.9,
+                        24.4,
+                        26.9,
+                        25.3
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uc8fc\ud0dd",
+                    "legendHoverLink": true,
+                    "data": [
+                        15.2,
+                        29.1,
+                        19.4,
+                        16.6,
+                        19.0,
+                        15.5,
+                        14.8,
+                        15.9,
+                        19.2,
+                        32.0,
+                        14.3,
+                        27.3,
+                        15.1,
+                        14.3,
+                        12.7,
+                        14.7,
+                        14.5
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uad50\uc721",
+                    "legendHoverLink": true,
+                    "data": [
+                        8.0,
+                        4.6,
+                        4.6,
+                        6.4,
+                        6.7,
+                        7.0,
+                        9.5,
+                        10.0,
+                        10.0,
+                        5.0,
+                        3.9,
+                        4.2,
+                        4.7,
+                        7.2,
+                        6.1,
+                        5.9,
+                        7.3
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uc8fc\uac70\ud658\uacbd",
+                    "legendHoverLink": true,
+                    "data": [
+                        2.6,
+                        3.0,
+                        2.3,
+                        2.6,
+                        2.9,
+                        3.2,
+                        2.9,
+                        3.0,
+                        3.5,
+                        3.7,
+                        1.7,
+                        2.9,
+                        2.4,
+                        2.0,
+                        2.7,
+                        2.1,
+                        1.7
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uc790\uc5f0\ud658\uacbd",
+                    "legendHoverLink": true,
+                    "data": [
+                        4.7,
+                        1.3,
+                        2.5,
+                        3.7,
+                        0.6,
+                        0.7,
+                        0.6,
+                        0.8,
+                        0.3,
+                        0.7,
+                        1.0,
+                        0.9,
+                        4.1,
+                        3.2,
+                        6.2,
+                        2.7,
+                        2.7
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uae30\ud0c0",
+                    "legendHoverLink": true,
+                    "data": [
+                        3.0,
+                        5.8,
+                        4.9,
+                        6.7,
+                        7.5,
+                        6.6,
+                        5.8,
+                        4.7,
+                        6.0,
+                        3.7,
+                        5.0,
+                        5.6,
+                        6.9,
+                        7.5,
+                        5.1,
+                        4.5,
+                        5.7
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\uac15\uc6d0",
+                        "\uacbd\uae30",
+                        "\uacbd\ub0a8",
+                        "\uacbd\ubd81",
+                        "\uad11\uc8fc",
+                        "\ub300\uad6c",
+                        "\ub300\uc804",
+                        "\ubd80\uc0b0",
+                        "\uc11c\uc6b8",
+                        "\uc138\uc885",
+                        "\uc6b8\uc0b0",
+                        "\uc778\ucc9c",
+                        "\uc804\ub0a8",
+                        "\uc804\ubd81",
+                        "\uc81c\uc8fc",
+                        "\ucda9\ub0a8",
+                        "\ucda9\ubd81"
+                    ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc5f0\ub3c4\uc5d0 \ub530\ub978 \uc9c0\uc5ed\ubcc4 \uc804\uc785 \uc0ac\uc720 (%) ",
+                    "subtext": "dacon \ubd80\ub3d9\uc0b0\ub300\ud68c \uc218\uc0c1\uc790\ud300 \ucf54\ub4dc \ucc38\uace0",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "axis",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "cross"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        "\uc9c1\uc5c5",
+                        "\uac00\uc871",
+                        "\uc8fc\ud0dd",
+                        "\uad50\uc721",
+                        "\uc8fc\uac70\ud658\uacbd",
+                        "\uc790\uc5f0\ud658\uacbd",
+                        "\uae30\ud0c0"
+                    ],
+                    "selected": {
+                        "\uc9c1\uc5c5": true,
+                        "\uac00\uc871": true,
+                        "\uc8fc\ud0dd": true,
+                        "\uad50\uc721": true,
+                        "\uc8fc\uac70\ud658\uacbd": true,
+                        "\uc790\uc5f0\ud658\uacbd": true,
+                        "\uae30\ud0c0": true
+                    },
+                    "type": "scroll",
+                    "show": true,
+                    "left": "65%",
+                    "bottom": "79%",
+                    "orient": "verticle",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "icon": "pin"
+                }
+            ],
+            "series": [
+                {
+                    "type": "bar",
+                    "name": "\uc9c1\uc5c5",
+                    "legendHoverLink": true,
+                    "data": [
+                        41.3,
+                        29.1,
+                        34.6,
+                        35.1,
+                        31.8,
+                        34.2,
+                        39.7,
+                        36.0,
+                        35.8,
+                        31.7,
+                        40.1,
+                        31.0,
+                        35.8,
+                        33.8,
+                        42.8,
+                        43.5,
+                        42.2
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uac00\uc871",
+                    "legendHoverLink": true,
+                    "data": [
+                        24.6,
+                        25.9,
+                        30.2,
+                        27.0,
+                        32.2,
+                        32.1,
+                        25.8,
+                        27.3,
+                        23.3,
+                        25.1,
+                        33.4,
+                        26.1,
+                        29.6,
+                        29.8,
+                        24.2,
+                        25.4,
+                        24.8
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uc8fc\ud0dd",
+                    "legendHoverLink": true,
+                    "data": [
+                        16.1,
+                        30.0,
+                        19.1,
+                        16.9,
+                        16.5,
+                        15.2,
+                        15.4,
+                        17.0,
+                        20.3,
+                        29.3,
+                        12.2,
+                        27.2,
+                        16.8,
+                        14.2,
+                        11.7,
+                        15.7,
+                        15.5
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uad50\uc721",
+                    "legendHoverLink": true,
+                    "data": [
+                        6.2,
+                        4.4,
+                        4.8,
+                        6.0,
+                        7.7,
+                        7.6,
+                        10.2,
+                        9.6,
+                        9.9,
+                        4.4,
+                        3.9,
+                        4.6,
+                        4.0,
+                        7.3,
+                        6.6,
+                        5.0,
+                        5.7
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uc8fc\uac70\ud658\uacbd",
+                    "legendHoverLink": true,
+                    "data": [
+                        3.3,
+                        3.4,
+                        2.4,
+                        2.8,
+                        3.3,
+                        3.4,
+                        3.2,
+                        3.4,
+                        3.9,
+                        3.5,
+                        1.7,
+                        3.3,
+                        2.3,
+                        2.3,
+                        2.5,
+                        2.3,
+                        2.1
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uc790\uc5f0\ud658\uacbd",
+                    "legendHoverLink": true,
+                    "data": [
+                        5.3,
+                        1.3,
+                        3.0,
+                        3.8,
+                        0.6,
+                        0.6,
+                        0.6,
+                        0.8,
+                        0.3,
+                        1.0,
+                        1.1,
+                        1.0,
+                        4.4,
+                        3.3,
+                        7.5,
+                        2.9,
+                        3.1
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uae30\ud0c0",
+                    "legendHoverLink": true,
+                    "data": [
+                        3.2,
+                        5.8,
+                        5.9,
+                        8.5,
+                        7.9,
+                        6.8,
+                        5.2,
+                        5.9,
+                        6.6,
+                        5.0,
+                        7.6,
+                        6.8,
+                        7.1,
+                        9.2,
+                        4.8,
+                        5.2,
+                        6.6
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\uac15\uc6d0",
+                        "\uacbd\uae30",
+                        "\uacbd\ub0a8",
+                        "\uacbd\ubd81",
+                        "\uad11\uc8fc",
+                        "\ub300\uad6c",
+                        "\ub300\uc804",
+                        "\ubd80\uc0b0",
+                        "\uc11c\uc6b8",
+                        "\uc138\uc885",
+                        "\uc6b8\uc0b0",
+                        "\uc778\ucc9c",
+                        "\uc804\ub0a8",
+                        "\uc804\ubd81",
+                        "\uc81c\uc8fc",
+                        "\ucda9\ub0a8",
+                        "\ucda9\ubd81"
+                    ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc5f0\ub3c4\uc5d0 \ub530\ub978 \uc9c0\uc5ed\ubcc4 \uc804\uc785 \uc0ac\uc720 (%) ",
+                    "subtext": "dacon \ubd80\ub3d9\uc0b0\ub300\ud68c \uc218\uc0c1\uc790\ud300 \ucf54\ub4dc \ucc38\uace0",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "axis",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "cross"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        }
+    ]
+};
+        chart_7568f3ea99f74028a22a6b4e89c0e3b4.setOption(option_7568f3ea99f74028a22a6b4e89c0e3b4);
+    </script>
+                <div id="35e9d30fc12e409c8a555c775d866910" class="chart-container" style="width:800px; height:600px;"></div>
+    <script>
+        var chart_35e9d30fc12e409c8a555c775d866910 = echarts.init(
+            document.getElementById('35e9d30fc12e409c8a555c775d866910'), 'westeros', {renderer: 'canvas'});
+        var option_35e9d30fc12e409c8a555c775d866910 = {
+    "baseOption": {
+        "series": [
+            {
+                "type": "bar",
+                "name": "\uc9c1\uc5c5",
+                "legendHoverLink": true,
+                "data": [
+                    43.9,
+                    32.2,
+                    42.3,
+                    40.4,
+                    38.5,
+                    41.5,
+                    38.2,
+                    39.4,
+                    23.8,
+                    34.6,
+                    41.9,
+                    32.7,
+                    37.0,
+                    43.9,
+                    39.7,
+                    39.7,
+                    40.7
+                ],
+                "showBackground": false,
+                "stack": "stack1",
+                "barMinHeight": 0,
+                "barCategoryGap": "20%",
+                "barGap": "30%",
+                "large": false,
+                "largeThreshold": 400,
+                "seriesLayoutBy": "column",
+                "datasetIndex": 0,
+                "clip": true,
+                "zlevel": 0,
+                "z": 2,
+                "label": {
+                    "show": true,
+                    "position": "inside",
+                    "margin": 8
+                },
+                "rippleEffect": {
+                    "show": true,
+                    "brushType": "stroke",
+                    "scale": 2.5,
+                    "period": 4
+                }
+            },
+            {
+                "type": "bar",
+                "name": "\uac00\uc871",
+                "legendHoverLink": true,
+                "data": [
+                    26.6,
+                    26.0,
+                    22.8,
+                    26.9,
+                    25.2,
+                    23.2,
+                    25.4,
+                    26.1,
+                    28.5,
+                    25.2,
+                    21.1,
+                    25.8,
+                    28.8,
+                    25.0,
+                    27.2,
+                    26.4,
+                    26.4
+                ],
+                "showBackground": false,
+                "stack": "stack1",
+                "barMinHeight": 0,
+                "barCategoryGap": "20%",
+                "barGap": "30%",
+                "large": false,
+                "largeThreshold": 400,
+                "seriesLayoutBy": "column",
+                "datasetIndex": 0,
+                "clip": true,
+                "zlevel": 0,
+                "z": 2,
+                "label": {
+                    "show": true,
+                    "position": "inside",
+                    "margin": 8
+                },
+                "rippleEffect": {
+                    "show": true,
+                    "brushType": "stroke",
+                    "scale": 2.5,
+                    "period": 4
+                }
+            },
+            {
+                "type": "bar",
+                "name": "\uc8fc\ud0dd",
+                "legendHoverLink": true,
+                "data": [
+                    13.3,
+                    23.5,
+                    15.1,
+                    14.3,
+                    16.8,
+                    16.1,
+                    19.3,
+                    17.7,
+                    31.8,
+                    22.7,
+                    16.6,
+                    24.9,
+                    14.8,
+                    12.7,
+                    13.4,
+                    16.3,
+                    15.4
+                ],
+                "showBackground": false,
+                "stack": "stack1",
+                "barMinHeight": 0,
+                "barCategoryGap": "20%",
+                "barGap": "30%",
+                "large": false,
+                "largeThreshold": 400,
+                "seriesLayoutBy": "column",
+                "datasetIndex": 0,
+                "clip": true,
+                "zlevel": 0,
+                "z": 2,
+                "label": {
+                    "show": true,
+                    "position": "inside",
+                    "margin": 8
+                },
+                "rippleEffect": {
+                    "show": true,
+                    "brushType": "stroke",
+                    "scale": 2.5,
+                    "period": 4
+                }
+            },
+            {
+                "type": "bar",
+                "name": "\uad50\uc721",
+                "legendHoverLink": true,
+                "data": [
+                    6.9,
+                    6.0,
+                    10.2,
+                    8.5,
+                    8.4,
+                    7.4,
+                    6.9,
+                    6.7,
+                    3.6,
+                    7.0,
+                    10.3,
+                    5.2,
+                    8.6,
+                    8.9,
+                    9.4,
+                    7.5,
+                    7.6
+                ],
+                "showBackground": false,
+                "stack": "stack1",
+                "barMinHeight": 0,
+                "barCategoryGap": "20%",
+                "barGap": "30%",
+                "large": false,
+                "largeThreshold": 400,
+                "seriesLayoutBy": "column",
+                "datasetIndex": 0,
+                "clip": true,
+                "zlevel": 0,
+                "z": 2,
+                "label": {
+                    "show": true,
+                    "position": "inside",
+                    "margin": 8
+                },
+                "rippleEffect": {
+                    "show": true,
+                    "brushType": "stroke",
+                    "scale": 2.5,
+                    "period": 4
+                }
+            },
+            {
+                "type": "bar",
+                "name": "\uc8fc\uac70\ud658\uacbd",
+                "legendHoverLink": true,
+                "data": [
+                    2.6,
+                    3.7,
+                    3.0,
+                    3.2,
+                    2.4,
+                    2.4,
+                    2.7,
+                    2.3,
+                    3.6,
+                    3.1,
+                    2.9,
+                    3.4,
+                    3.1,
+                    2.6,
+                    2.8,
+                    3.2,
+                    3.0
+                ],
+                "showBackground": false,
+                "stack": "stack1",
+                "barMinHeight": 0,
+                "barCategoryGap": "20%",
+                "barGap": "30%",
+                "large": false,
+                "largeThreshold": 400,
+                "seriesLayoutBy": "column",
+                "datasetIndex": 0,
+                "clip": true,
+                "zlevel": 0,
+                "z": 2,
+                "label": {
+                    "show": true,
+                    "position": "inside",
+                    "margin": 8
+                },
+                "rippleEffect": {
+                    "show": true,
+                    "brushType": "stroke",
+                    "scale": 2.5,
+                    "period": 4
+                }
+            },
+            {
+                "type": "bar",
+                "name": "\uc790\uc5f0\ud658\uacbd",
+                "legendHoverLink": true,
+                "data": [
+                    0.9,
+                    1.7,
+                    1.0,
+                    0.9,
+                    2.6,
+                    2.6,
+                    1.8,
+                    2.1,
+                    2.4,
+                    1.5,
+                    1.7,
+                    1.5,
+                    0.9,
+                    1.1,
+                    1.0,
+                    1.1,
+                    1.2
+                ],
+                "showBackground": false,
+                "stack": "stack1",
+                "barMinHeight": 0,
+                "barCategoryGap": "20%",
+                "barGap": "30%",
+                "large": false,
+                "largeThreshold": 400,
+                "seriesLayoutBy": "column",
+                "datasetIndex": 0,
+                "clip": true,
+                "zlevel": 0,
+                "z": 2,
+                "label": {
+                    "show": true,
+                    "position": "inside",
+                    "margin": 8
+                },
+                "rippleEffect": {
+                    "show": true,
+                    "brushType": "stroke",
+                    "scale": 2.5,
+                    "period": 4
+                }
+            },
+            {
+                "type": "bar",
+                "name": "\uae30\ud0c0",
+                "legendHoverLink": true,
+                "data": [
+                    5.7,
+                    6.9,
+                    5.6,
+                    5.8,
+                    6.2,
+                    6.9,
+                    5.7,
+                    5.9,
+                    6.4,
+                    5.9,
+                    5.5,
+                    6.4,
+                    6.8,
+                    5.7,
+                    6.4,
+                    5.8,
+                    5.6
+                ],
+                "showBackground": false,
+                "stack": "stack1",
+                "barMinHeight": 0,
+                "barCategoryGap": "20%",
+                "barGap": "30%",
+                "large": false,
+                "largeThreshold": 400,
+                "seriesLayoutBy": "column",
+                "datasetIndex": 0,
+                "clip": true,
+                "zlevel": 0,
+                "z": 2,
+                "label": {
+                    "show": true,
+                    "position": "inside",
+                    "margin": 8
+                },
+                "rippleEffect": {
+                    "show": true,
+                    "brushType": "stroke",
+                    "scale": 2.5,
+                    "period": 4
+                }
+            }
+        ],
+        "timeline": {
+            "axisType": "category",
+            "orient": "horizontal",
+            "autoPlay": true,
+            "controlPosition": "left",
+            "loop": true,
+            "rewind": false,
+            "show": true,
+            "inverse": false,
+            "bottom": "-5px",
+            "data": [
+                "2016\ub144\ub3c4",
+                "2017\ub144\ub3c4",
+                "2018\ub144\ub3c4",
+                "2019\ub144\ub3c4",
+                "2020\ub144\ub3c4"
+            ]
+        },
+        "xAxis": [
+            {
+                "show": true,
+                "scale": false,
+                "nameLocation": "end",
+                "nameGap": 15,
+                "gridIndex": 0,
+                "inverse": false,
+                "offset": 0,
+                "splitNumber": 5,
+                "minInterval": 0,
+                "splitLine": {
+                    "show": false,
+                    "lineStyle": {
+                        "show": true,
+                        "width": 1,
+                        "opacity": 1,
+                        "curveness": 0,
+                        "type": "solid"
+                    }
+                },
+                "data": [
+                    "\uac15\uc6d0",
+                    "\uacbd\uae30",
+                    "\uacbd\ub0a8",
+                    "\uacbd\ubd81",
+                    "\uad11\uc8fc",
+                    "\ub300\uad6c",
+                    "\ub300\uc804",
+                    "\ubd80\uc0b0",
+                    "\uc11c\uc6b8",
+                    "\uc138\uc885",
+                    "\uc6b8\uc0b0",
+                    "\uc778\ucc9c",
+                    "\uc804\ub0a8",
+                    "\uc804\ubd81",
+                    "\uc81c\uc8fc",
+                    "\ucda9\ub0a8",
+                    "\ucda9\ubd81"
+                ]
+            }
+        ],
+        "yAxis": [
+            {
+                "show": true,
+                "scale": false,
+                "nameLocation": "end",
+                "nameGap": 15,
+                "gridIndex": 0,
+                "inverse": false,
+                "offset": 0,
+                "splitNumber": 5,
+                "minInterval": 0,
+                "splitLine": {
+                    "show": false,
+                    "lineStyle": {
+                        "show": true,
+                        "width": 1,
+                        "opacity": 1,
+                        "curveness": 0,
+                        "type": "solid"
+                    }
+                }
+            }
+        ]
+    },
+    "options": [
+        {
+            "legend": [
+                {
+                    "data": [
+                        "\uc9c1\uc5c5",
+                        "\uac00\uc871",
+                        "\uc8fc\ud0dd",
+                        "\uad50\uc721",
+                        "\uc8fc\uac70\ud658\uacbd",
+                        "\uc790\uc5f0\ud658\uacbd",
+                        "\uae30\ud0c0"
+                    ],
+                    "selected": {
+                        "\uc9c1\uc5c5": true,
+                        "\uac00\uc871": true,
+                        "\uc8fc\ud0dd": true,
+                        "\uad50\uc721": true,
+                        "\uc8fc\uac70\ud658\uacbd": true,
+                        "\uc790\uc5f0\ud658\uacbd": true,
+                        "\uae30\ud0c0": true
+                    },
+                    "type": "scroll",
+                    "show": true,
+                    "left": "65%",
+                    "bottom": "79%",
+                    "orient": "verticle",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "icon": "pin"
+                }
+            ],
+            "series": [
+                {
+                    "type": "bar",
+                    "name": "\uc9c1\uc5c5",
+                    "legendHoverLink": true,
+                    "data": [
+                        41.2,
+                        32.2,
+                        38.9,
+                        36.7,
+                        36.6,
+                        40.8,
+                        37.8,
+                        36.5,
+                        24.6,
+                        35.9,
+                        38.7,
+                        33.5,
+                        34.4,
+                        40.5,
+                        37.4,
+                        38.0,
+                        39.3
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uac00\uc871",
+                    "legendHoverLink": true,
+                    "data": [
+                        30.1,
+                        27.8,
+                        26.5,
+                        29.9,
+                        29.0,
+                        26.8,
+                        26.5,
+                        28.2,
+                        28.3,
+                        29.8,
+                        25.4,
+                        26.3,
+                        32.6,
+                        28.8,
+                        30.2,
+                        29.1,
+                        28.3
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uc8fc\ud0dd",
+                    "legendHoverLink": true,
+                    "data": [
+                        16.3,
+                        25.9,
+                        19.8,
+                        19.7,
+                        18.6,
+                        17.7,
+                        22.0,
+                        22.3,
+                        35.2,
+                        19.9,
+                        20.2,
+                        26.9,
+                        17.2,
+                        16.0,
+                        16.5,
+                        19.3,
+                        18.3
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uad50\uc721",
+                    "legendHoverLink": true,
+                    "data": [
+                        5.6,
+                        5.0,
+                        8.0,
+                        6.6,
+                        6.9,
+                        6.1,
+                        5.8,
+                        5.3,
+                        3.1,
+                        5.2,
+                        8.1,
+                        4.5,
+                        7.3,
+                        7.2,
+                        8.1,
+                        6.1,
+                        6.7
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uc8fc\uac70\ud658\uacbd",
+                    "legendHoverLink": true,
+                    "data": [
+                        1.3,
+                        2.0,
+                        1.4,
+                        1.6,
+                        1.3,
+                        1.4,
+                        1.3,
+                        1.3,
+                        1.6,
+                        2.0,
+                        1.3,
+                        1.8,
+                        1.5,
+                        1.3,
+                        1.4,
+                        1.4,
+                        1.4
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uc790\uc5f0\ud658\uacbd",
+                    "legendHoverLink": true,
+                    "data": [
+                        0.9,
+                        1.4,
+                        0.9,
+                        0.9,
+                        2.0,
+                        1.9,
+                        1.4,
+                        1.7,
+                        1.7,
+                        1.0,
+                        1.4,
+                        1.4,
+                        0.8,
+                        0.9,
+                        1.0,
+                        0.9,
+                        1.0
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uae30\ud0c0",
+                    "legendHoverLink": true,
+                    "data": [
+                        4.6,
+                        5.7,
+                        4.6,
+                        4.5,
+                        5.7,
+                        5.3,
+                        5.3,
+                        4.7,
+                        5.6,
+                        6.3,
+                        4.9,
+                        5.6,
+                        6.1,
+                        5.4,
+                        5.4,
+                        5.2,
+                        5.0
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\uac15\uc6d0",
+                        "\uacbd\uae30",
+                        "\uacbd\ub0a8",
+                        "\uacbd\ubd81",
+                        "\uad11\uc8fc",
+                        "\ub300\uad6c",
+                        "\ub300\uc804",
+                        "\ubd80\uc0b0",
+                        "\uc11c\uc6b8",
+                        "\uc138\uc885",
+                        "\uc6b8\uc0b0",
+                        "\uc778\ucc9c",
+                        "\uc804\ub0a8",
+                        "\uc804\ubd81",
+                        "\uc81c\uc8fc",
+                        "\ucda9\ub0a8",
+                        "\ucda9\ubd81"
+                    ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc5f0\ub3c4\uc5d0 \ub530\ub978 \uc9c0\uc5ed\ubcc4 \uc804\ucd9c \uc0ac\uc720 (%) ",
+                    "subtext": "dacon \ubd80\ub3d9\uc0b0\ub300\ud68c \uc218\uc0c1\uc790\ud300 \ucf54\ub4dc \ucc38\uace0",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "axis",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "cross"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        "\uc9c1\uc5c5",
+                        "\uac00\uc871",
+                        "\uc8fc\ud0dd",
+                        "\uad50\uc721",
+                        "\uc8fc\uac70\ud658\uacbd",
+                        "\uc790\uc5f0\ud658\uacbd",
+                        "\uae30\ud0c0"
+                    ],
+                    "selected": {
+                        "\uc9c1\uc5c5": true,
+                        "\uac00\uc871": true,
+                        "\uc8fc\ud0dd": true,
+                        "\uad50\uc721": true,
+                        "\uc8fc\uac70\ud658\uacbd": true,
+                        "\uc790\uc5f0\ud658\uacbd": true,
+                        "\uae30\ud0c0": true
+                    },
+                    "type": "scroll",
+                    "show": true,
+                    "left": "65%",
+                    "bottom": "79%",
+                    "orient": "verticle",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "icon": "pin"
+                }
+            ],
+            "series": [
+                {
+                    "type": "bar",
+                    "name": "\uc9c1\uc5c5",
+                    "legendHoverLink": true,
+                    "data": [
+                        41.6,
+                        32.1,
+                        40.8,
+                        37.6,
+                        37.0,
+                        39.7,
+                        35.2,
+                        34.3,
+                        24.1,
+                        34.2,
+                        40.4,
+                        32.4,
+                        34.7,
+                        40.9,
+                        36.8,
+                        38.2,
+                        39.2
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uac00\uc871",
+                    "legendHoverLink": true,
+                    "data": [
+                        28.8,
+                        27.3,
+                        25.0,
+                        28.4,
+                        27.1,
+                        25.1,
+                        23.9,
+                        26.8,
+                        28.6,
+                        29.0,
+                        24.0,
+                        25.7,
+                        30.8,
+                        28.0,
+                        29.9,
+                        27.9,
+                        26.9
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uc8fc\ud0dd",
+                    "legendHoverLink": true,
+                    "data": [
+                        15.6,
+                        24.2,
+                        17.0,
+                        18.2,
+                        17.7,
+                        18.9,
+                        25.7,
+                        24.6,
+                        32.8,
+                        19.7,
+                        18.3,
+                        26.5,
+                        17.3,
+                        15.6,
+                        16.3,
+                        18.2,
+                        18.4
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uad50\uc721",
+                    "legendHoverLink": true,
+                    "data": [
+                        6.1,
+                        5.7,
+                        8.7,
+                        7.3,
+                        7.6,
+                        6.6,
+                        6.2,
+                        5.5,
+                        3.6,
+                        6.0,
+                        8.7,
+                        5.1,
+                        8.1,
+                        7.4,
+                        8.3,
+                        6.9,
+                        7.0
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uc8fc\uac70\ud658\uacbd",
+                    "legendHoverLink": true,
+                    "data": [
+                        1.7,
+                        2.7,
+                        2.0,
+                        2.1,
+                        1.8,
+                        1.9,
+                        2.0,
+                        1.7,
+                        2.3,
+                        2.6,
+                        1.7,
+                        2.7,
+                        2.0,
+                        1.7,
+                        1.8,
+                        2.0,
+                        1.9
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uc790\uc5f0\ud658\uacbd",
+                    "legendHoverLink": true,
+                    "data": [
+                        1.0,
+                        1.6,
+                        1.1,
+                        1.0,
+                        2.6,
+                        2.3,
+                        1.5,
+                        1.9,
+                        2.0,
+                        1.4,
+                        1.6,
+                        1.6,
+                        1.0,
+                        1.1,
+                        1.1,
+                        1.0,
+                        1.2
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uae30\ud0c0",
+                    "legendHoverLink": true,
+                    "data": [
+                        5.1,
+                        6.4,
+                        5.4,
+                        5.5,
+                        6.2,
+                        5.5,
+                        5.6,
+                        5.3,
+                        6.4,
+                        6.9,
+                        5.3,
+                        6.1,
+                        6.1,
+                        5.3,
+                        5.9,
+                        5.9,
+                        5.3
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\uac15\uc6d0",
+                        "\uacbd\uae30",
+                        "\uacbd\ub0a8",
+                        "\uacbd\ubd81",
+                        "\uad11\uc8fc",
+                        "\ub300\uad6c",
+                        "\ub300\uc804",
+                        "\ubd80\uc0b0",
+                        "\uc11c\uc6b8",
+                        "\uc138\uc885",
+                        "\uc6b8\uc0b0",
+                        "\uc778\ucc9c",
+                        "\uc804\ub0a8",
+                        "\uc804\ubd81",
+                        "\uc81c\uc8fc",
+                        "\ucda9\ub0a8",
+                        "\ucda9\ubd81"
+                    ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc5f0\ub3c4\uc5d0 \ub530\ub978 \uc9c0\uc5ed\ubcc4 \uc804\ucd9c \uc0ac\uc720 (%) ",
+                    "subtext": "dacon \ubd80\ub3d9\uc0b0\ub300\ud68c \uc218\uc0c1\uc790\ud300 \ucf54\ub4dc \ucc38\uace0",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "axis",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "cross"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        "\uc9c1\uc5c5",
+                        "\uac00\uc871",
+                        "\uc8fc\ud0dd",
+                        "\uad50\uc721",
+                        "\uc8fc\uac70\ud658\uacbd",
+                        "\uc790\uc5f0\ud658\uacbd",
+                        "\uae30\ud0c0"
+                    ],
+                    "selected": {
+                        "\uc9c1\uc5c5": true,
+                        "\uac00\uc871": true,
+                        "\uc8fc\ud0dd": true,
+                        "\uad50\uc721": true,
+                        "\uc8fc\uac70\ud658\uacbd": true,
+                        "\uc790\uc5f0\ud658\uacbd": true,
+                        "\uae30\ud0c0": true
+                    },
+                    "type": "scroll",
+                    "show": true,
+                    "left": "65%",
+                    "bottom": "79%",
+                    "orient": "verticle",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "icon": "pin"
+                }
+            ],
+            "series": [
+                {
+                    "type": "bar",
+                    "name": "\uc9c1\uc5c5",
+                    "legendHoverLink": true,
+                    "data": [
+                        42.1,
+                        32.8,
+                        42.3,
+                        38.6,
+                        37.4,
+                        40.5,
+                        36.5,
+                        37.5,
+                        23.8,
+                        35.9,
+                        41.7,
+                        32.5,
+                        34.6,
+                        41.6,
+                        37.8,
+                        39.0,
+                        39.2
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uac00\uc871",
+                    "legendHoverLink": true,
+                    "data": [
+                        28.4,
+                        27.8,
+                        24.1,
+                        28.0,
+                        26.9,
+                        24.8,
+                        25.0,
+                        27.3,
+                        28.2,
+                        28.1,
+                        23.0,
+                        25.6,
+                        30.7,
+                        27.3,
+                        29.7,
+                        27.5,
+                        27.6
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uc8fc\ud0dd",
+                    "legendHoverLink": true,
+                    "data": [
+                        15.1,
+                        22.1,
+                        16.2,
+                        16.9,
+                        18.0,
+                        17.8,
+                        22.9,
+                        20.2,
+                        33.1,
+                        19.2,
+                        17.8,
+                        25.4,
+                        17.3,
+                        14.8,
+                        15.2,
+                        17.7,
+                        17.3
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uad50\uc721",
+                    "legendHoverLink": true,
+                    "data": [
+                        6.1,
+                        5.8,
+                        8.8,
+                        7.2,
+                        7.3,
+                        6.8,
+                        6.3,
+                        5.8,
+                        3.4,
+                        6.0,
+                        9.0,
+                        4.8,
+                        7.7,
+                        7.7,
+                        8.3,
+                        6.7,
+                        7.1
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uc8fc\uac70\ud658\uacbd",
+                    "legendHoverLink": true,
+                    "data": [
+                        1.9,
+                        3.1,
+                        2.0,
+                        2.5,
+                        1.9,
+                        2.1,
+                        2.3,
+                        1.9,
+                        2.8,
+                        2.4,
+                        1.7,
+                        3.3,
+                        2.4,
+                        1.9,
+                        2.0,
+                        2.3,
+                        2.3
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uc790\uc5f0\ud658\uacbd",
+                    "legendHoverLink": true,
+                    "data": [
+                        1.0,
+                        1.6,
+                        1.1,
+                        1.0,
+                        2.5,
+                        2.3,
+                        1.4,
+                        1.8,
+                        2.0,
+                        1.2,
+                        1.5,
+                        1.5,
+                        1.0,
+                        1.0,
+                        1.1,
+                        1.0,
+                        1.1
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uae30\ud0c0",
+                    "legendHoverLink": true,
+                    "data": [
+                        5.4,
+                        6.8,
+                        5.4,
+                        5.7,
+                        6.0,
+                        5.8,
+                        5.5,
+                        5.4,
+                        6.8,
+                        7.2,
+                        5.2,
+                        6.8,
+                        6.3,
+                        5.8,
+                        6.0,
+                        5.9,
+                        5.4
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\uac15\uc6d0",
+                        "\uacbd\uae30",
+                        "\uacbd\ub0a8",
+                        "\uacbd\ubd81",
+                        "\uad11\uc8fc",
+                        "\ub300\uad6c",
+                        "\ub300\uc804",
+                        "\ubd80\uc0b0",
+                        "\uc11c\uc6b8",
+                        "\uc138\uc885",
+                        "\uc6b8\uc0b0",
+                        "\uc778\ucc9c",
+                        "\uc804\ub0a8",
+                        "\uc804\ubd81",
+                        "\uc81c\uc8fc",
+                        "\ucda9\ub0a8",
+                        "\ucda9\ubd81"
+                    ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc5f0\ub3c4\uc5d0 \ub530\ub978 \uc9c0\uc5ed\ubcc4 \uc804\ucd9c \uc0ac\uc720 (%) ",
+                    "subtext": "dacon \ubd80\ub3d9\uc0b0\ub300\ud68c \uc218\uc0c1\uc790\ud300 \ucf54\ub4dc \ucc38\uace0",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "axis",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "cross"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        "\uc9c1\uc5c5",
+                        "\uac00\uc871",
+                        "\uc8fc\ud0dd",
+                        "\uad50\uc721",
+                        "\uc8fc\uac70\ud658\uacbd",
+                        "\uc790\uc5f0\ud658\uacbd",
+                        "\uae30\ud0c0"
+                    ],
+                    "selected": {
+                        "\uc9c1\uc5c5": true,
+                        "\uac00\uc871": true,
+                        "\uc8fc\ud0dd": true,
+                        "\uad50\uc721": true,
+                        "\uc8fc\uac70\ud658\uacbd": true,
+                        "\uc790\uc5f0\ud658\uacbd": true,
+                        "\uae30\ud0c0": true
+                    },
+                    "type": "scroll",
+                    "show": true,
+                    "left": "65%",
+                    "bottom": "79%",
+                    "orient": "verticle",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "icon": "pin"
+                }
+            ],
+            "series": [
+                {
+                    "type": "bar",
+                    "name": "\uc9c1\uc5c5",
+                    "legendHoverLink": true,
+                    "data": [
+                        43.9,
+                        33.2,
+                        42.5,
+                        39.8,
+                        38.2,
+                        41.0,
+                        36.9,
+                        39.3,
+                        24.9,
+                        35.9,
+                        43.3,
+                        33.4,
+                        35.3,
+                        43.1,
+                        39.0,
+                        39.5,
+                        40.3
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uac00\uc871",
+                    "legendHoverLink": true,
+                    "data": [
+                        26.5,
+                        27.4,
+                        23.4,
+                        27.7,
+                        26.9,
+                        24.2,
+                        25.3,
+                        26.9,
+                        29.6,
+                        27.7,
+                        22.1,
+                        26.3,
+                        29.8,
+                        25.9,
+                        28.4,
+                        27.0,
+                        26.9
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uc8fc\ud0dd",
+                    "legendHoverLink": true,
+                    "data": [
+                        14.1,
+                        21.9,
+                        15.2,
+                        15.0,
+                        16.0,
+                        17.3,
+                        21.7,
+                        18.2,
+                        30.4,
+                        18.8,
+                        15.7,
+                        23.2,
+                        16.7,
+                        13.5,
+                        14.3,
+                        17.1,
+                        16.0
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uad50\uc721",
+                    "legendHoverLink": true,
+                    "data": [
+                        6.9,
+                        6.5,
+                        10.3,
+                        8.2,
+                        8.2,
+                        7.4,
+                        7.0,
+                        6.5,
+                        3.9,
+                        6.9,
+                        10.0,
+                        5.5,
+                        8.2,
+                        8.4,
+                        9.2,
+                        7.3,
+                        7.9
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uc8fc\uac70\ud658\uacbd",
+                    "legendHoverLink": true,
+                    "data": [
+                        2.3,
+                        3.3,
+                        2.6,
+                        3.0,
+                        2.3,
+                        2.3,
+                        2.7,
+                        2.2,
+                        3.2,
+                        2.9,
+                        2.2,
+                        3.4,
+                        2.8,
+                        2.4,
+                        2.6,
+                        2.7,
+                        2.7
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uc790\uc5f0\ud658\uacbd",
+                    "legendHoverLink": true,
+                    "data": [
+                        1.0,
+                        1.5,
+                        1.0,
+                        0.9,
+                        2.5,
+                        2.4,
+                        1.6,
+                        1.9,
+                        2.2,
+                        1.0,
+                        1.7,
+                        1.6,
+                        0.9,
+                        1.1,
+                        1.0,
+                        1.0,
+                        1.1
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uae30\ud0c0",
+                    "legendHoverLink": true,
+                    "data": [
+                        5.2,
+                        6.1,
+                        4.9,
+                        5.4,
+                        5.9,
+                        5.4,
+                        4.8,
+                        5.0,
+                        5.9,
+                        6.8,
+                        4.9,
+                        6.6,
+                        6.3,
+                        5.6,
+                        5.6,
+                        5.3,
+                        5.0
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\uac15\uc6d0",
+                        "\uacbd\uae30",
+                        "\uacbd\ub0a8",
+                        "\uacbd\ubd81",
+                        "\uad11\uc8fc",
+                        "\ub300\uad6c",
+                        "\ub300\uc804",
+                        "\ubd80\uc0b0",
+                        "\uc11c\uc6b8",
+                        "\uc138\uc885",
+                        "\uc6b8\uc0b0",
+                        "\uc778\ucc9c",
+                        "\uc804\ub0a8",
+                        "\uc804\ubd81",
+                        "\uc81c\uc8fc",
+                        "\ucda9\ub0a8",
+                        "\ucda9\ubd81"
+                    ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc5f0\ub3c4\uc5d0 \ub530\ub978 \uc9c0\uc5ed\ubcc4 \uc804\ucd9c \uc0ac\uc720 (%) ",
+                    "subtext": "dacon \ubd80\ub3d9\uc0b0\ub300\ud68c \uc218\uc0c1\uc790\ud300 \ucf54\ub4dc \ucc38\uace0",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "axis",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "cross"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        "\uc9c1\uc5c5",
+                        "\uac00\uc871",
+                        "\uc8fc\ud0dd",
+                        "\uad50\uc721",
+                        "\uc8fc\uac70\ud658\uacbd",
+                        "\uc790\uc5f0\ud658\uacbd",
+                        "\uae30\ud0c0"
+                    ],
+                    "selected": {
+                        "\uc9c1\uc5c5": true,
+                        "\uac00\uc871": true,
+                        "\uc8fc\ud0dd": true,
+                        "\uad50\uc721": true,
+                        "\uc8fc\uac70\ud658\uacbd": true,
+                        "\uc790\uc5f0\ud658\uacbd": true,
+                        "\uae30\ud0c0": true
+                    },
+                    "type": "scroll",
+                    "show": true,
+                    "left": "65%",
+                    "bottom": "79%",
+                    "orient": "verticle",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "icon": "pin"
+                }
+            ],
+            "series": [
+                {
+                    "type": "bar",
+                    "name": "\uc9c1\uc5c5",
+                    "legendHoverLink": true,
+                    "data": [
+                        43.9,
+                        32.2,
+                        42.3,
+                        40.4,
+                        38.5,
+                        41.5,
+                        38.2,
+                        39.4,
+                        23.8,
+                        34.6,
+                        41.9,
+                        32.7,
+                        37.0,
+                        43.9,
+                        39.7,
+                        39.7,
+                        40.7
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uac00\uc871",
+                    "legendHoverLink": true,
+                    "data": [
+                        26.6,
+                        26.0,
+                        22.8,
+                        26.9,
+                        25.2,
+                        23.2,
+                        25.4,
+                        26.1,
+                        28.5,
+                        25.2,
+                        21.1,
+                        25.8,
+                        28.8,
+                        25.0,
+                        27.2,
+                        26.4,
+                        26.4
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uc8fc\ud0dd",
+                    "legendHoverLink": true,
+                    "data": [
+                        13.3,
+                        23.5,
+                        15.1,
+                        14.3,
+                        16.8,
+                        16.1,
+                        19.3,
+                        17.7,
+                        31.8,
+                        22.7,
+                        16.6,
+                        24.9,
+                        14.8,
+                        12.7,
+                        13.4,
+                        16.3,
+                        15.4
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uad50\uc721",
+                    "legendHoverLink": true,
+                    "data": [
+                        6.9,
+                        6.0,
+                        10.2,
+                        8.5,
+                        8.4,
+                        7.4,
+                        6.9,
+                        6.7,
+                        3.6,
+                        7.0,
+                        10.3,
+                        5.2,
+                        8.6,
+                        8.9,
+                        9.4,
+                        7.5,
+                        7.6
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uc8fc\uac70\ud658\uacbd",
+                    "legendHoverLink": true,
+                    "data": [
+                        2.6,
+                        3.7,
+                        3.0,
+                        3.2,
+                        2.4,
+                        2.4,
+                        2.7,
+                        2.3,
+                        3.6,
+                        3.1,
+                        2.9,
+                        3.4,
+                        3.1,
+                        2.6,
+                        2.8,
+                        3.2,
+                        3.0
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uc790\uc5f0\ud658\uacbd",
+                    "legendHoverLink": true,
+                    "data": [
+                        0.9,
+                        1.7,
+                        1.0,
+                        0.9,
+                        2.6,
+                        2.6,
+                        1.8,
+                        2.1,
+                        2.4,
+                        1.5,
+                        1.7,
+                        1.5,
+                        0.9,
+                        1.1,
+                        1.0,
+                        1.1,
+                        1.2
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\uae30\ud0c0",
+                    "legendHoverLink": true,
+                    "data": [
+                        5.7,
+                        6.9,
+                        5.6,
+                        5.8,
+                        6.2,
+                        6.9,
+                        5.7,
+                        5.9,
+                        6.4,
+                        5.9,
+                        5.5,
+                        6.4,
+                        6.8,
+                        5.7,
+                        6.4,
+                        5.8,
+                        5.6
+                    ],
+                    "showBackground": false,
+                    "stack": "stack1",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\uac15\uc6d0",
+                        "\uacbd\uae30",
+                        "\uacbd\ub0a8",
+                        "\uacbd\ubd81",
+                        "\uad11\uc8fc",
+                        "\ub300\uad6c",
+                        "\ub300\uc804",
+                        "\ubd80\uc0b0",
+                        "\uc11c\uc6b8",
+                        "\uc138\uc885",
+                        "\uc6b8\uc0b0",
+                        "\uc778\ucc9c",
+                        "\uc804\ub0a8",
+                        "\uc804\ubd81",
+                        "\uc81c\uc8fc",
+                        "\ucda9\ub0a8",
+                        "\ucda9\ubd81"
+                    ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc5f0\ub3c4\uc5d0 \ub530\ub978 \uc9c0\uc5ed\ubcc4 \uc804\ucd9c \uc0ac\uc720 (%) ",
+                    "subtext": "dacon \ubd80\ub3d9\uc0b0\ub300\ud68c \uc218\uc0c1\uc790\ud300 \ucf54\ub4dc \ucc38\uace0",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "axis",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "cross"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        }
+    ]
+};
+        chart_35e9d30fc12e409c8a555c775d866910.setOption(option_35e9d30fc12e409c8a555c775d866910);
+    </script>
+    </div>
+
+    <script>
+    </script>
+    <script>
+        (function() {
+            containers = document.getElementsByClassName("chart-container");
+            if(containers.length > 0) {
+                containers[0].style.display = "block";
+            }
+        })()
+
+        function showChart(evt, chartID) {
+            let containers = document.getElementsByClassName("chart-container");
+            for (let i = 0; i < containers.length; i++) {
+                containers[i].style.display = "none";
+            }
+
+            let tablinks = document.getElementsByClassName("tablinks");
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = "tablinks";
+            }
+
+            document.getElementById(chartID).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
